@@ -1,0 +1,11 @@
+<script>
+  {
+    const url = new URL(location.href);
+    let text = new URLSearchParams(url.search).getAll('text')[0];
+    new URLSearchParams(url.search).forEach((v, k) => {
+        if (k === 'text') return;
+        text = text.split(`{${k}}`).join(v);
+    });
+    location.href = url.origin + url.pathname + '?text=' + text;
+}
+</script>
