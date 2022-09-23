@@ -38,3 +38,11 @@ In this method we collect the properties of `globalThis`, `Object.prototype`, `E
 ### Safari
 
 <img width="574" alt="Screen Shot 2022-09-23 at 11 34 45" src="https://user-images.githubusercontent.com/13243797/191922116-e8f23bf7-fbbe-4f7a-8658-87b0b3eaef9d.png">
+
+### Brave
+
+<img width="856" alt="Screen Shot 2022-09-23 at 11 45 03" src="https://user-images.githubusercontent.com/13243797/191923967-417a3948-99c8-4612-a7c2-f4d92cbc3955.png">
+
+### Opera
+
+<img width="976" alt="Screen Shot 2022-09-23 at 11 47 14" src="https://user-images.githubusercontent.com/13243797/191924324-c0186e69-6d83-412c-9be9-276fc1cdf32e.png">
