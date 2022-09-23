@@ -1,10 +1,10 @@
 # Research - Collect as many properties as possible under globalThis
 
-Trying to find the best way to collect as many properties as we can that are accessible under `globalThis`
+Trying to find the best way to collect as many properties as we can that are accessible under `globalThis`.
 
-> Visit https://weizman.github.io/global-this-props/ demo page and see results in the console
+> _Visit https://weizman.github.io/global-this-props/ demo page and see results in the console_
 
-## Method 1
+## [Method 1](https://github.com/weizman/global-this-props/blob/main/index.html#L15)
 
 Calling `Object.getOwnPropertyDescriptors` on `globalThis`. Derived from:
 
@@ -13,11 +13,11 @@ const target = globalThis;
 Object.entries(Object.getOwnPropertyDescriptors(target));
 ```
 
-Problem with this approach is that is assumes all properties on `globalThis` are its own properties, but in reality that's not the case.
+Problem with this approach is that **it assumes all properties on `globalThis` are its own properties, but in reality that's not the case.**
 
 In addition to its own properties, `globalThis` exposes own properties of `Object`, `EventTarget` and `Window` (for browsers) as well.
 
-## Method 2
+## [Method 2](https://github.com/weizman/global-this-props/blob/main/index.html#L3)
 
 In this method we collect the properties of `globalThis`, `Object.prototype`, `EventTarget.prototype`, `Window.prototype` - all of which are accessible via `globalThis`
 
