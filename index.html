@@ -17,8 +17,15 @@
     }
   }
   
+  const m1 = method1()
+  const m2 = method2()
+  
   {
-    console.log('method1', method1().length, method1())
-    console.log('method2', method2().length, method2())
+    console.log('method1', m1().length, m1())
+    console.log('method2', m2().length, m2())
+  }
+  {
+    console.log('in method 1 but not in method 2', m1.filter(x => !m2.includes(x)))
+    console.log('in method 2 but not in method 1', m2.filter(x => !m1.includes(x)))
   }
 </script>
