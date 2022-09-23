@@ -1,6 +1,6 @@
 <script>
   {
-    function method1() {
+    function method2() {
       let props = Object.getOwnPropertyNames(globalThis)
       props = props.concat(Object.getOwnPropertyNames(Object.prototype))
       if (globalThis?.Window?.prototype) {
@@ -12,7 +12,7 @@
       return props;
     }
     
-    function method2() {
+    function method1() {
       return Object.keys(Object.getOwnPropertyDescriptors(globalThis))
     }
   }
